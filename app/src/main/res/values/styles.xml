@@ -1,11 +1,83 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="LifeActivityTheme" parent="AppTheme">
 
+    </style>
+    <style name="line">
+        <item name="android:background">#f1f1f1</item>
+    </style>
+    <style name="line_vertical" parent="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="radioButton">
+        <item name="android:background">@drawable/selector_checkbox_green</item>
+        <item name="android:button">@null</item>
+
+    </style>
+    <style name="smallButton">
+        <item name="android:textSize">@dimen/smallButtonTextSize</item>
+        <item name="android:textColor">@drawable/white_color_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/smallPadding</item>
+        <item name="android:paddingRight">@dimen/smallPadding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/smallButtonWidth</item>
+        <item name="android:minHeight">@dimen/smallButtonHeight</item>
+    </style>
+    <style name="smallRedButton" parent="@style/smallButton">
+        <item name="android:background">@drawable/bg_btn_style_red</item>
+    </style>
+    <style name="bigButton">
+        <item name="android:textSize">@dimen/bigButtonTextSize</item>
+        <item name="android:textColor">@drawable/white_color_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/largePadding</item>
+        <item name="android:paddingRight">@dimen/largePadding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/normalButtonHeight</item>
+    </style>
+
+    <style name="bigRedButton" parent="@style/bigButton">
+        <item name="android:background">@drawable/bg_btn_style_red</item>
+    </style>
+
+    <style name="bigBlueButton" parent="@style/bigButton">
+        <item name="android:background">@drawable/bg_btn_style_darkblue</item>
+    </style>
+
+    <style name="bigGreenButton" parent="@style/bigButton">
+        <item name="android:background">@drawable/bg_btn_style_green</item>
+    </style>
+    <!--评分 星星-->
+    <style name="RatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:maxHeight">32dp</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:minHeight">16dp</item>
+    </style>
+    <style name="RatingBar1" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:maxHeight">32dp</item>
+        <item name="android:isIndicator">false</item>
+        <item name="android:minHeight">16dp</item>
+    </style>
+    <!-- 按钮样式 -->
+    <style name="btn_bg_and_textcolor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px85</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/zgq_btn_bg_selector</item>
+        <item name="android:textColor">@drawable/zgq_btn_text_color</item>
+    </style>
 </resources>
