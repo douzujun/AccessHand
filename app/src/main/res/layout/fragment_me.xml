@@ -217,16 +217,19 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.33">
+
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
-                        android:background="@mipmap/ic_youhui"/>
+                        android:background="@mipmap/ic_youhui3"
+                        android:id="@+id/imageView2" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="我的认证"/>
+                        android:text="我的群组"/>
                 </LinearLayout>
                 <!--积分商城-->
                 <LinearLayout

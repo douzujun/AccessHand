@@ -1,12 +1,14 @@
 <resources>
 
     <!-- Base application theme. -->
+    <!--不需要原生的ActionBar-->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="LifeActivityTheme" parent="AppTheme">
 
     </style>
@@ -58,6 +60,7 @@
     <style name="bigGreenButton" parent="@style/bigButton">
         <item name="android:background">@drawable/bg_btn_style_green</item>
     </style>
+
     <!--评分 星星-->
     <style name="RatingBar" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/rating_bar</item>
@@ -71,6 +74,7 @@
         <item name="android:isIndicator">false</item>
         <item name="android:minHeight">16dp</item>
     </style>
+
     <!-- 按钮样式 -->
     <style name="btn_bg_and_textcolor">
         <item name="android:layout_width">match_parent</item>
