@@ -47,7 +47,7 @@ public class Activity_login extends AppCompatActivity implements View.OnClickLis
                 Intent tmp = new Intent();
                 tmp.putExtra("username", "");
                 tmp.putExtra("passwd","");
-                setResult(1, tmp);        //专门用于向上一个活动返回处理结果
+                setResult(1, tmp);         //专门用于向上一个活动返回处理结果
                 finish();
                 break;
             case R.id.icon_register:      //注册

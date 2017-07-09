@@ -12,18 +12,21 @@
     <style name="LifeActivityTheme" parent="AppTheme">
 
     </style>
+
     <style name="line">
         <item name="android:background">#f1f1f1</item>
     </style>
+
     <style name="line_vertical" parent="line">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
     </style>
+
     <style name="radioButton">
         <item name="android:background">@drawable/selector_checkbox_green</item>
         <item name="android:button">@null</item>
-
     </style>
+
     <style name="smallButton">
         <item name="android:textSize">@dimen/smallButtonTextSize</item>
         <item name="android:textColor">@drawable/white_color_selector</item>
@@ -35,9 +38,11 @@
         <item name="android:minWidth">@dimen/smallButtonWidth</item>
         <item name="android:minHeight">@dimen/smallButtonHeight</item>
     </style>
+
     <style name="smallRedButton" parent="@style/smallButton">
         <item name="android:background">@drawable/bg_btn_style_red</item>
     </style>
+
     <style name="bigButton">
         <item name="android:textSize">@dimen/bigButtonTextSize</item>
         <item name="android:textColor">@drawable/white_color_selector</item>
@@ -57,7 +62,7 @@
         <item name="android:background">@drawable/bg_btn_style_darkblue</item>
     </style>
 
-    <style name="bigGreenButton" parent="@style/bigButton">
+    <style name="bigGreenButton" parent="@style/bigButton" >
         <item name="android:background">@drawable/bg_btn_style_green</item>
     </style>
 
@@ -68,11 +73,26 @@
         <item name="android:isIndicator">true</item>
         <item name="android:minHeight">16dp</item>
     </style>
+
     <style name="RatingBar1" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/rating_bar</item>
         <item name="android:maxHeight">32dp</item>
         <item name="android:isIndicator">false</item>
         <item name="android:minHeight">16dp</item>
+    </style>
+
+    <style name="RatingBar2" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar2</item>
+        <item name="android:maxHeight">25dp</item>
+        <item name="android:isIndicator">false</item>
+        <item name="android:minHeight">14dp</item>
+    </style>
+
+    <style name="RatingBar3" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar3</item>
+        <item name="android:maxHeight">25dp</item>
+        <item name="android:isIndicator">false</item>
+        <item name="android:minHeight">14dp</item>
     </style>
 
     <!-- 按钮样式 -->
@@ -84,4 +104,12 @@
         <item name="android:background">@drawable/zgq_btn_bg_selector</item>
         <item name="android:textColor">@drawable/zgq_btn_text_color</item>
     </style>
+
+
+    <style name="exist_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+
+
 </resources>

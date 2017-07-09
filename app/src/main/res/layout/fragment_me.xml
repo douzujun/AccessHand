@@ -191,16 +191,19 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.33">
+
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
-                        android:background="@mipmap/ic_my_adress1"/>
+                        android:background="@mipmap/ic_my_shop"
+                        android:id="@+id/imageView4" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="我的地址"/>
+                        android:text="常见问题"/>
                 </LinearLayout>
             </LinearLayout>
             <!--第二排图标-->
@@ -242,12 +245,12 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
-                        android:background="@mipmap/ic_my_shop"/>
+                        android:background="@mipmap/jifen2"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="常见问题"/>
+                        android:text="积分商城"/>
 
                 </LinearLayout>
                 <!--客服与帮助-->

@@ -16,11 +16,11 @@ import com.douzi.accesshand.Order.FragmentOrder;
 public class MainActivity extends AppCompatActivity implements
         android.view.View.OnClickListener{
 
-    private Fragment[] fragments;//Fragment数组
-    private ImageView[] imagebuttons;//tag图标
-    private TextView[] textviews;//tag文字
-    private int index;//tag编号
-    private int currentTabIndex;// 当前fragment的index
+    private Fragment[] fragments;     //Fragment数组
+    private ImageView[] imagebuttons; //tag图标
+    private TextView[] textviews;     //tag文字
+    private int index;                //tag编号
+    private int currentTabIndex;      //当前fragment的index
 
     //定义Fragment
     private FragmentHome fragmentHome;

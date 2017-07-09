@@ -68,33 +68,34 @@ public class FragmentMe extends Fragment implements View.OnClickListener {
                 intent = new Intent(getContext(),Activity_login.class);
                 startActivityForResult(intent,1);
                 break;
-//            case R.id.ic_weiwancheng:
-//                intent = new Intent(getContext(),weiwancheng_Activity.class);
-//                startActivityForResult(intent,1);
-//                break;
-//            case R.id.ic_yiwancheng:
-//                intent = new Intent(getContext(),yiwancheng_Activity.class);
-//                startActivityForResult(intent,1);
-//                break;
-//            case R.id.ic_daipingjia:
-//                Toast.makeText(getContext(),"待评价",Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.ic_my_info:
-//                intent = new Intent(getContext(),My_Info_Activity.class);
-//                startActivity(intent);
-//                break;
-//            case R.id.ic_my_wallet:
-//                intent = new Intent(getContext(),aypayment_Activity.class);
-//                startActivity(intent);
-//                break;
+            case R.id.ic_weiwancheng:
+                intent = new Intent(getContext(),weiwancheng_Activity.class);
+                startActivityForResult(intent,1);
+                break;
+            case R.id.ic_yiwancheng:
+                intent = new Intent(getContext(),yiwancheng_Activity.class);
+                startActivityForResult(intent,1);
+                break;
+            case R.id.ic_daipingjia:
+                Toast.makeText(getContext(),"待评价",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.ic_my_info:
+                intent = new Intent(getContext(),My_Info_Activity.class);
+                startActivity(intent);
+                break;
+            case R.id.ic_my_wallet:
+                intent = new Intent(getContext(), qianbao_Activity.class);
+                startActivity(intent);
+                break;
             case R.id.ic_my_adress:
-                Toast.makeText(getContext(),"我的地址",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"常见问题",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.ic_my_youhui:
-                Toast.makeText(getContext(),"我的认证",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"我的群组",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.ic_my_jifen:
-                Toast.makeText(getContext(),"常见问题",Toast.LENGTH_SHORT).show();
+                intent = new Intent(getContext(), jifen_Activity.class);
+                startActivity(intent);
                 break;
             case R.id.ic_my_kefu:
                 intent = new Intent(Intent.ACTION_DIAL);

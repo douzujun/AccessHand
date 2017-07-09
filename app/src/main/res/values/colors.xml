@@ -312,4 +312,9 @@
     <color name="green_btn_color_pressed">#ff298409</color>
     <!--通知栏和标题颜色-->
     <color name="color_title">#ff7700</color>
+
+    <color name="whites">#ffffff</color>
+    <color name="gray_color">#ffe8ecef</color>
+    <color name="bg_sort_color">#EDEDED</color>
+
 </resources>

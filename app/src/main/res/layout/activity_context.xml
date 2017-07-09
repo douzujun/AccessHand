@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <!--星星评价-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px30"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/m_assess"
+            android:layout_width="@dimen/px160"
+            android:layout_height="@dimen/px160"
+            android:src="@drawable/ay4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总体评价"
+            android:padding="@dimen/px20"
+            android:layout_gravity="center"
+            />
+        <RatingBar
+            android:id="@+id/m_ratingBar_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            style="@style/RatingBar3"
+            android:rating="4.0"
+            android:minHeight="16dp"
+            android:maxHeight="32dp"
+            android:stepSize="0.1"
+            android:layout_below="@+id/m_merchant_name"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px30"
+        android:paddingRight="@dimen/px30"
+        android:focusableInTouchMode="true" >
+        <EditText
+            android:id="@+id/m_assess_edt"
+            android:layout_width="match_parent"
+            android:layout_height="350px"
+            android:background="@drawable/mine_edt_bg"
+            android:hint="请输入对快递员的评价，最少10个字，最多50字"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/px30"
+            android:paddingLeft="@dimen/px30"
+            android:paddingTop="@dimen/px20"
+            android:paddingRight="@dimen/px30"
+            android:gravity="top" />
+    </LinearLayout>
+
+    <!--放置评论图片用-->
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px180"
+        android:background="@color/white"
+        android:paddingTop="@dimen/px20" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px160"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/px30" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/m_menmian1_icon"
+                    android:layout_width="@dimen/px120"
+                    android:layout_height="@dimen/px120"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pj_tj"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginTop="@dimen/px10" />
+
+                <ImageView
+                    android:id="@+id/m_image_one"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:src="@drawable/pj_close"
+                    android:layout_marginLeft="-15dp"
+                    android:padding="@dimen/px10"
+                    android:layout_marginTop="-3dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/m_menmian2_icon"
+                    android:layout_width="@dimen/px120"
+                    android:layout_height="@dimen/px120"
+                    android:src="@drawable/pj_tj"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginTop="@dimen/px10"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/m_image_two"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:src="@drawable/pj_close"
+                    android:layout_marginLeft="-20dp"
+                    android:padding="@dimen/px10"
+                    android:layout_marginTop="-3dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/m_menmian3_icon"
+                    android:layout_width="@dimen/px120"
+                    android:layout_height="@dimen/px120"
+                    android:src="@drawable/pj_tj"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginTop="@dimen/px10"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/m_image_three"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:src="@drawable/pj_close"
+                    android:layout_marginLeft="-20dp"
+                    android:padding="@dimen/px10"
+                    android:layout_marginTop="-3dp"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--分割符-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#4fa19999"/>
+
+    <ScrollView
+        android:id="@+id/m_lie"
+        android:layout_width="match_parent"
+        android:layout_height="165dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="6dp" >
+
+                <ImageView
+                    android:id="@+id/dian_pu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dian_pu4"  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  快递评分"
+                    android:textSize="18dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="物流速度  "
+                    android:padding="@dimen/px20"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    />
+                <RatingBar
+                    android:id="@+id/m_ratingBar_shop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    style="@style/RatingBar3"
+                    android:rating="4.0"
+                    android:minHeight="16dp"
+                    android:maxHeight="32dp"
+                    android:stepSize="0.1"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务态度  "
+                    android:padding="@dimen/px20"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/textView2" />
+
+                <RatingBar
+                    android:id="@+id/m_ratingBar_shop3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    style="@style/RatingBar3"
+                    android:rating="4.0"
+                    android:minHeight="16dp"
+                    android:maxHeight="32dp"
+                    android:stepSize="0.1"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="119dp" />
+
+    <Button
+        android:id="@+id/m_commit"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="@color/blue_btn_color_normal"
+        android:text= "提交评价"
+        android:textSize= "@dimen/px40"
+
+        android:layout_marginBottom= "@dimen/px45" />
+
+</LinearLayout>
+
+    <!--style= "@style/btn_bg_and_textcolor"-->
+    <!--android:layout_marginRight= "@dimen/px45"-->
+    <!--android:layout_marginLeft= "@dimen/px45"-->

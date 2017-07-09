@@ -8,7 +8,7 @@
     </item>
     <item
         android:id="@android:id/secondaryProgress"
-        android:drawable="@drawable/pj_x1">
+        android:drawable="@drawable/pj_x5">
     </item>
     <item
         android:id="@android:id/progress"

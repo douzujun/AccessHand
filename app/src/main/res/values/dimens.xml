@@ -161,4 +161,6 @@
     <dimen name="folder_cover_size">72dp</dimen>
     <dimen name="pad_left">40dp</dimen>
     <dimen name="mag_left">25dp</dimen>
+
+    <dimen name="material_status_progress_border">3dp</dimen>
 </resources>

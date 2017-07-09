@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- TODO: Update blank fragment layout -->
+            <!-- Toolbar -->
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/daily_pic"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/blue_btn_color_normal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/btn_wei_left1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_me_left"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单详情"
+                        android:paddingRight="50dp"
+                        android:gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="6dp"
+                        android:textSize="22sp"
+                        android:textColor="#f7efef"
+                        android:background="@color/blue_btn_color_normal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="复制"
+                        android:textSize="22sp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="6dp"
+                        android:textColor="#f7efef"
+                        android:layout_marginLeft="100dp"
+                        android:background="@color/blue_btn_color_normal"
+                        />
+
+                </LinearLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <!--订单信息-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp" >
+
+                <!--第一个订单-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/dingdan_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearangele"
+                    android:padding="10dp" >
+                    <TextView
+                        android:id="@+id/text_xiangqin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您的订单详情"
+                        android:textSize="20dp" />
+                    <Button
+                        android:id="@+id/danhao_1"
+                        android:layout_width="280dp"
+                        android:layout_height="30dp"
+                        android:text="快递单号:JSJWaiBao20171224"
+                        android:gravity="center"
+                        android:layout_below="@+id/text_xiangqin"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/app_green"
+                        android:background="@drawable/linearangele2" />
+
+                    <TextView
+                        android:id="@+id/text_wuliu"
+                        android:text="物流信息"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/danhao_1"
+                        android:textSize="20dp"
+                        android:layout_marginTop="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp" >
+
+                        <ImageView
+                            android:id="@+id/qidian_1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/qidian_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:text="中南世纪花城(江苏省崇川区通天大道1号)" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/zhongdian_2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/zhongdian_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:text="中南北海花城(江苏省崇川世纪大道2号)" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/fuwu_time"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ontime_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:text="配送时间:立即配送" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/guzhu_2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/guzhu_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:text="收货人:林北玄" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/lianxi_1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/mobile_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:text="联系方式:17805054367" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/money_1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/money_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:text="配送费:¥20 (不含小费)" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_yuangong"
+                        android:text="快递人信息"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/danhao_1"
+                        android:textSize="20dp"
+                        android:layout_marginTop="8dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/yuangong_1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/guzhu_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:text="快递人:常大秦" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/lianxi_2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/mobile_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:text="联系方式:17805035425" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_yuangong_2"
+                        android:text="用户信息"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/danhao_1"
+                        android:textSize="20dp"
+                        android:layout_marginTop="8dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/yonghu_3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/guzhu_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:text="姓名:窦清水" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/lianxi_3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/mobile_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:text="联系方式:17805034357" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

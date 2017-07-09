@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- TODO: Update blank fragment layout -->
+            <!-- Toolbar -->
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/daily_pic1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/blue_btn_color_normal">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/btn_yi_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_me_left"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="我的积分"
+                        android:paddingRight="50dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="4dp"
+                        android:textSize="24sp"
+                        android:textColor="#f7efef"
+                        android:background="@color/blue_btn_color_normal"/>
+                </LinearLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <!--订单信息-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp" >
+
+                <!--第一个订单-->
+                <RelativeLayout
+                    android:id="@+id/dingdan_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearangele"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/yu_e_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前积分"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/money_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2033 "
+                        android:textColor="@color/app_green"
+                        android:textSize="29dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/yu_e_1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分"
+                        android:textColor="@color/app_green"
+                        android:layout_toRightOf="@+id/money_text"
+                        android:layout_marginTop="40dp"
+                        />
+                    <TextView
+                        android:id="@+id/shuoming_jifen"
+                        android:text="积分说明"
+                        android:layout_toRightOf="@+id/yu_e_1"
+                        android:layout_marginLeft="200dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_width="3000dp"
+                        android:layout_height="35dp"
+                        android:text="积分兑换商品"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/orangered"
+                        android:layout_below="@+id/money_text"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/jifenbtn" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/blue_btn_color_normal"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/whitesmoke"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="最近30天积分记录"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单积分"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+90"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="245dp"
+                            android:textColor="@color/app_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-07-07"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="4dp">
+
+                        <TextView
+                            android:background="#4fa19999"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单积分"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+74"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="245dp"
+                            android:textColor="@color/app_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-07-03"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="4dp">
+
+                        <TextView
+                            android:background="#4fa19999"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单积分"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+104"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="245dp"
+                            android:textColor="@color/app_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-07-01"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="4dp">
+
+                        <TextView
+                            android:background="#4fa19999"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单积分"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+100"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="245dp"
+                            android:textColor="@color/app_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-07-01"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="4dp">
+
+                        <TextView
+                            android:background="#4fa19999"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单积分"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+90"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="245dp"
+                            android:textColor="@color/app_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-06-30"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="4dp">
+
+                        <TextView
+                            android:background="#4fa19999"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单积分"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+60"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="245dp"
+                            android:textColor="@color/app_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-06-28"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="4dp">
+
+                        <TextView
+                            android:background="#4fa19999"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单积分"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+173"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="245dp"
+                            android:textColor="@color/app_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-06-26"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="4dp">
+
+                        <TextView
+                            android:background="#4fa19999"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单积分"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+90"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="245dp"
+                            android:textColor="@color/app_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-06-20"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="4dp">
+
+                        <TextView
+                            android:background="#4fa19999"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单积分"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+90"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="245dp"
+                            android:textColor="@color/app_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-06-18"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="4dp">
+
+                        <TextView
+                            android:background="#4fa19999"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单积分"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+90"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="245dp"
+                            android:textColor="@color/app_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-06-16"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="4dp">
+
+                        <TextView
+                            android:background="#4fa19999"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
