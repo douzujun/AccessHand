@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_register"
+    android:id="@+id/activity_mainregister"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.douzi.accesshand.Me.Activity_register" >
@@ -57,65 +57,136 @@
 
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background" >
 
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/phone_1"
+                android:id="@+id/imageView4" />
+
+            <!-- 手机号输入框 -->
             <EditText
                 android:id="@+id/phone_register_number"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
                 android:textColor="#1c1d1c"
-                android:hint="输入您的手机号"
+                android:hint="请输入手机号码"
                 android:inputType="phone"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
+                android:paddingTop="20dp"
                 android:maxLines="1"
                 android:maxLength="11"/>
 
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:layout_width="48.5dp"
+                android:layout_height="48dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/yanzhen_4" />
+
+            <EditText
+                android:id="@+id/phone_receive_notice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:layout_marginTop="2dp"
+                android:textColor="#1c1d1c"
+                android:inputType="phone"
+                android:hint=" 短信验证码"
+                android:maxLines="1"
+                android:maxLength="11"/>
             <Button
                 android:id="@+id/send_notice"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.3"
+                android:layout_weight="0.4"
                 android:textColor="#fff"
+                android:textSize="14dp"
                 android:text="获取验证码"/>
-
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/phone_receive_notice"
+        <!--分割符-->
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:textColor="#1c1d1c"
-            android:inputType="phone"
-            android:hint="输入您的验证码"
-            android:maxLines="1"
-            android:maxLength="11"/>
+            android:layout_height="11dp"
+            android:background="#1fa19991"/>
 
-        <EditText
-            android:id="@+id/phone_register_passwd"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:textColor="#1c1d1c"
-            android:inputType="textPassword"
-            android:hint="输入您的密码"
-            android:maxLines="1"
-            android:maxLength="11"/>
+            android:background="@color/cardview_light_background" >
 
-        <EditText
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/code_4" />
+
+            <EditText
+                android:id="@+id/phone_register_passwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textColor="#1c1d1c"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="2dp"
+                android:inputType="textPassword"
+                android:hint=" 输入您的密码"
+                android:maxLines="1"
+                android:maxLength="11"/>
+
+            <ImageView
+                android:id="@+id/no_show"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/no_show"
+                />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:textColor="#1c1d1c"
-            android:inputType="textPassword"
-            android:hint="输入您的身份证号"
-            android:maxLines="1"
-            android:maxLength="11"
-            />
+            android:background="@color/cardview_light_background" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="44dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/code_5" />
+
+            <EditText
+                android:id="@+id/identify_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:textColor="#1c1d1c"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="3dp"
+                android:inputType="phone"
+                android:hint=" 输入您的身份证号"
+                android:maxLines="1"
+                android:maxLength="19"
+                />
+        </LinearLayout>
+
 
         <!-- Phone页Tip -->
         <TextView
@@ -132,19 +203,17 @@
         <!-- 下一步 操作按钮 -->
         <Button
             android:id="@+id/icon_register"
-            style="?android:textAppearanceSmall"
             android:layout_width="wrap_content"
             android:minWidth="98dp"
             android:layout_height="36dp"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:text="注册"
             android:layout_gravity="right"
-            android:textStyle="bold"
             android:textSize="20sp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:textColor="#FFFFFF"
-            android:background="#043850"
+            android:background="#2dadda"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"/>
 
@@ -162,17 +231,18 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_marginTop="490dp"
+            android:layout_marginTop="500dp"
             android:layout_width="123dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:src="@mipmap/logo1" />
 
         <!--<ImageView-->
-            <!--android:layout_width="180dp"-->
-            <!--android:layout_height="25dp"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:src="@mipmap/domainname"/>-->
+        <!--android:layout_width="180dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@mipmap/domainname"/>-->
     </LinearLayout>
+
 
 </RelativeLayout>

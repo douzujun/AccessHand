@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--自定义标题栏-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:text="关注动态"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="22sp"
+                android:textColor="#f7efef"
+                android:background="@color/blue_btn_color_normal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您可能感兴趣的内容"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/whitesmoke"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icon_head_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ay1"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="和趣屋进口食品"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="优选好店"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="14dp"
+                    android:textColor="@color/orange"
+                    />
+                <Button
+                    android:id="@+id/guanzhu_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="收藏"
+                    android:textColor="@color/blue_btn_color_normal"
+                    android:background="@drawable/linearangele3"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="20dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#新品上市#"
+                    android:textColor="@color/blue_btn_color_pressed"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textView5" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本店新进口零食到货啦~~"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="9dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/whites"
+                >
+
+                <LinearLayout
+                    android:id="@+id/dongtai_1"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/dongtai_8"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/dongtai_9"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/dongtai_10"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/dongtai_2"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/dongtai_11"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/dongtai_12"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/dongtai_13"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/liulan_2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.8万"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="7dp"
+                    />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:text="赞 283"
+                    android:textSize="10dp"
+                    android:padding="4dp"
+                    android:background="@drawable/linearangele"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="6dp"
+                    />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:text="回复 19"
+                    android:textSize="10dp"
+                    android:padding="4dp"
+                    android:background="@drawable/linearangele"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="6dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/whitesmoke"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下面这些达人都很棒呢"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/refresh_1"
+                    android:layout_marginLeft="116dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="换一批"
+                    android:layout_marginTop="8dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/icon_head_image2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ay5"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerInParent="true"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="爱搭配的小汐"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="时尚爱好者, 潮女搭配师"
+                            android:textSize="11dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="5dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="粉丝数: 1.2万"
+                            android:textSize="10dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="5dp"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="关注"
+                        android:textColor="@color/gray"
+                        android:background="@drawable/linearangele"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginLeft="110dp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/whitesmoke"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/icon_head_image3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/meifu_6"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerInParent="true"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="爱美妆的小渚"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="美妆达人"
+                            android:textSize="11dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="5dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="粉丝数: 2.2万"
+                            android:textSize="10dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="5dp"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="关注"
+                        android:textColor="@color/gray"
+                        android:background="@drawable/linearangele"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginLeft="150dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/whitesmoke"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/icon_head_image4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/meifu_7"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerInParent="true"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="好吃的伊吹风子"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="美食爱好者"
+                            android:textSize="11dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="5dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="粉丝数: 2.2万"
+                            android:textSize="10dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="5dp"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:text="关注"
+                        android:textColor="@color/gray"
+                        android:background="@drawable/linearangele"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginLeft="135dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/whitesmoke"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

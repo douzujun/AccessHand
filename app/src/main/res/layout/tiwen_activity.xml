@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- TODO: Update blank fragment layout -->
+            <!-- Toolbar -->
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/daily_pic1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/blue_btn_color_normal">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/btn_yi_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_me_left"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提问"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="4dp"
+                        android:textSize="22sp"
+                        android:textColor="#f7efef"
+                        android:background="@color/blue_btn_color_normal"/>
+
+                    <TextView
+                        android:id="@+id/fabu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布"
+                        android:textSize="20sp"
+                        android:textColor="#f7efef"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="203dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@color/blue_btn_color_normal"
+                        />
+                </LinearLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <!--写下问题-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="写下问题"
+                    android:layout_marginLeft="4.5dp"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:id="@+id/wenti_1"
+                    android:layout_marginTop="10dp"
+                    android:hint="简单概括你的问题(5—40)"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="top"
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/whitesmoke"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="描述问题(选填)"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="3dp"
+                    />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        android:id="@+id/m_assess_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="350px"
+                        android:background="@null"
+                        android:hint="越详细越容易得到有效的回答"
+                        android:textColorHint="#999999"
+                        android:textSize="14dp"
+                        android:paddingTop="@dimen/px35"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="top" />
+
+                    <!--放置评论图片用-->
+                    <HorizontalScrollView
+                        android:id="@+id/scrollView"
+                        android:scrollbars="none"
+                        android:layout_width="match_parent"
+                        android:layout_height="210px"
+                        android:background="@color/white"
+                        android:paddingTop="@dimen/px20" >
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/px160"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="@dimen/px30" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/m_menmian1_icon"
+                                    android:layout_width="@dimen/px160"
+                                    android:layout_height="@dimen/px160"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/pj_tj"
+                                    android:layout_marginLeft="@dimen/px45"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/m_image_one"
+                                    android:layout_width="55px"
+                                    android:layout_height="55px"
+                                    android:src="@drawable/pj_close"
+                                    android:layout_marginLeft="-15dp"
+                                    android:padding="@dimen/px10"
+                                    android:layout_marginTop="-3dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+                                <ImageView
+                                    android:id="@+id/m_menmian2_icon"
+                                    android:layout_width="@dimen/px160"
+                                    android:layout_height="@dimen/px160"
+                                    android:src="@drawable/pj_tj"
+                                    android:layout_marginLeft="@dimen/px40"
+                                    android:visibility="gone"
+                                    />
+                                <ImageView
+                                    android:id="@+id/m_image_two"
+                                    android:layout_width="55px"
+                                    android:layout_height="55px"
+                                    android:src="@drawable/pj_close"
+                                    android:layout_marginLeft="-20dp"
+                                    android:padding="@dimen/px10"
+                                    android:layout_marginTop="-3dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:id="@+id/m_menmian3_icon"
+                                    android:layout_width="@dimen/px160"
+                                    android:layout_height="@dimen/px160"
+                                    android:src="@drawable/pj_tj"
+                                    android:layout_marginLeft="@dimen/px40"
+                                    android:visibility="gone"/>
+                                <ImageView
+                                    android:id="@+id/m_image_three"
+                                    android:layout_width="55px"
+                                    android:layout_height="55px"
+                                    android:src="@drawable/pj_close"
+                                    android:layout_marginLeft="-20dp"
+                                    android:padding="@dimen/px10"
+                                    android:layout_marginTop="-3dp"
+                                    android:visibility="gone"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/whitesmoke"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yaoqing_1"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/imageView7" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="邀请买过相关商品的人回答"
+                        />
+                </LinearLayout>
+                <EditText
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint=" 足球鞋、母婴"
+                    android:textSize="12dp"
+                    android:background="@drawable/linearangele"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/whitesmoke"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lianxi_1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/imageView8" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="在提问中显示名称"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="            北玄真人"
+                    />
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/next_1"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="18dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

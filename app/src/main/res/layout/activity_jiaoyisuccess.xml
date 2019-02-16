@@ -186,7 +186,7 @@
                             <de.hdodenhof.circleimageview.CircleImageView
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
-                                android:src="@drawable/child1"
+                                android:src="@drawable/ay1"
                                 android:layout_centerInParent="true"
                                 android:id="@+id/circleImageView" />
                         </LinearLayout>
@@ -542,6 +542,381 @@
 
                     </RelativeLayout>
 
+                    <!--分割符-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#4fa19999"/>
+
+                    <!--第三个订单-->
+                    <RelativeLayout
+                        android:id="@+id/dingdan_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linearangele"
+                        android:padding="10dp" >
+                        <!--头像-->
+                        <LinearLayout
+                            android:id="@+id/icon_head_image3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ay2"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/circleImageView3" />
+                        </LinearLayout>
+
+                        <RatingBar
+                            android:id="@+id/ratingBar_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:numStars="5"
+                            style="@style/RatingBar2"
+                            android:rating="4.5"
+                            android:minHeight="16dp"
+                            android:maxHeight="32dp"
+                            android:stepSize="0.1"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@+id/icon_head_image3"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="8dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            android:text="  月接单17单"
+                            android:layout_toRightOf="@+id/ratingBar_3"
+                            />
+                        <TextView
+                            android:id="@+id/text_qisong3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="起送价¥15"
+                            android:layout_toRightOf="@+id/icon_head_image3"
+                            android:layout_below="@+id/ratingBar_3"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="9dp"
+                            />
+                        <TextView
+                            android:id="@+id/name_text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="姓名:展双秦"
+                            android:layout_toRightOf="@+id/icon_head_image3"
+                            android:layout_below="@+id/text_qisong3"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="9dp" />
+
+                        <TextView
+                            android:id="@+id/text_car3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="常用车型:电动三轮车"
+                            android:layout_toRightOf="@+id/name_text3"
+                            android:layout_below="@+id/text_qisong3"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="9dp"
+                            />
+                        <TextView
+                            android:id="@+id/luxian_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="常驶路线: 南通狼山 - 中南世纪"
+                            android:layout_toRightOf="@+id/icon_head_image3"
+                            android:layout_below="@id/name_text3"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="9dp"
+                            />
+                        <Button
+                            android:id="@+id/weizhang_3"
+                            android:layout_width="70dp"
+                            android:layout_height="22dp"
+                            android:text="无违章记录"
+                            android:textSize="12dp"
+                            android:background="@drawable/linearangele"
+                            android:textColor="@color/green_btn_color_normal"
+                            android:layout_toRightOf="@+id/icon_head_image3"
+                            android:layout_below="@+id/luxian_3"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="8dp"
+                            />
+                        <ImageView
+                            android:id="@+id/xinji_3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/xinji_2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_below="@id/weizhang_3"
+                            android:layout_toRightOf="@+id/icon_head_image3"
+                            />
+
+                        <TextView
+                            android:id="@+id/xinji_text_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="星际快递 "
+                            android:layout_toRightOf="@+id/xinji_3"
+                            android:layout_below="@id/weizhang_3"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="4dp"
+                            />
+                        <ImageView
+                            android:id="@+id/ontime_3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ontime_1"
+                            android:layout_toRightOf="@+id/xinji_text_3"
+                            android:layout_marginTop="3dp"
+                            android:layout_below="@+id/weizhang_3"
+                            />
+                        <TextView
+                            android:id="@+id/ontime_text_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="守时快递"
+                            android:layout_toRightOf="@+id/ontime_3"
+                            android:layout_below="@+id/weizhang_3"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="2dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/renji_3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/reqi_1"
+                            android:layout_toRightOf="@+id/ontime_text_3"
+                            android:layout_below="@+id/weizhang_3"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="1dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="人气快递"
+                            android:layout_toRightOf="@+id/renji_3"
+                            android:layout_below="@+id/weizhang_3"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="2dp"
+                            />
+                        <Button
+                            android:id="@+id/call_3"
+                            android:layout_width="90dp"
+                            android:layout_height="28dp"
+                            android:text="联系员工"
+                            android:layout_below="@+id/xinji_3"
+                            android:background="@drawable/linearangele"
+                            android:textColor="@color/blue_btn_color_normal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="28dp"
+                            android:text="添加好友"
+                            android:layout_below="@+id/xinji_3"
+                            android:layout_toRightOf="@+id/call_3"
+                            android:background="@drawable/linearangele"
+                            android:textColor="@color/blue_btn_color_normal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="150dp"
+                            />
+                    </RelativeLayout>
+
+                    <!--分割符-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#4fa19999"/>
+
+                    <!--第四个订单-->
+                    <RelativeLayout
+                        android:id="@+id/dingdan_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linearangele"
+                        android:padding="10dp" >
+                        <!--头像-->
+                        <LinearLayout
+                            android:id="@+id/icon_head_image4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ay1"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/circleImageView4" />
+                        </LinearLayout>
+
+                        <RatingBar
+                            android:id="@+id/ratingBar_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:numStars="5"
+                            style="@style/RatingBar2"
+                            android:rating="4.5"
+                            android:minHeight="16dp"
+                            android:maxHeight="32dp"
+                            android:stepSize="0.1"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@+id/icon_head_image4"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="8dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            android:text="  月接单19单"
+                            android:layout_toRightOf="@+id/ratingBar_4"
+                            />
+                        <TextView
+                            android:id="@+id/text_qisong4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="起送价¥5"
+                            android:layout_toRightOf="@+id/icon_head_image4"
+                            android:layout_below="@+id/ratingBar_4"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="9dp"
+                            />
+                        <TextView
+                            android:id="@+id/name_text4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="姓名:赵小全"
+                            android:layout_toRightOf="@+id/icon_head_image4"
+                            android:layout_below="@+id/text_qisong4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="9dp" />
+
+                        <TextView
+                            android:id="@+id/text_car4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="常用车型:电瓶车"
+                            android:layout_toRightOf="@+id/name_text4"
+                            android:layout_below="@+id/text_qisong4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="9dp"
+                            />
+                        <TextView
+                            android:id="@+id/luxian_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="常驶路线: 中南世纪 - 崇川区北街"
+                            android:layout_toRightOf="@+id/icon_head_image4"
+                            android:layout_below="@id/name_text4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="9dp"
+                            />
+                        <Button
+                            android:id="@+id/weizhang_4"
+                            android:layout_width="70dp"
+                            android:layout_height="22dp"
+                            android:text="无违章记录"
+                            android:textSize="12dp"
+                            android:background="@drawable/linearangele"
+                            android:textColor="@color/green_btn_color_normal"
+                            android:layout_toRightOf="@+id/icon_head_image4"
+                            android:layout_below="@+id/luxian_4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="8dp"
+                            />
+                        <ImageView
+                            android:id="@+id/xinji_4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/xinji_2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_below="@id/weizhang_4"
+                            android:layout_toRightOf="@+id/icon_head_image4"
+                            />
+
+                        <TextView
+                            android:id="@+id/xinji_text_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="星际快递 "
+                            android:layout_toRightOf="@+id/xinji_4"
+                            android:layout_below="@id/weizhang_4"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="4dp"
+                            />
+                        <ImageView
+                            android:id="@+id/ontime_4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ontime_1"
+                            android:layout_toRightOf="@+id/xinji_text_4"
+                            android:layout_marginTop="3dp"
+                            android:layout_below="@+id/weizhang_4"
+                            />
+                        <TextView
+                            android:id="@+id/ontime_text_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="守时快递"
+                            android:layout_toRightOf="@+id/ontime_4"
+                            android:layout_below="@+id/weizhang_4"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="2dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/renji_4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/reqi_1"
+                            android:layout_toRightOf="@+id/ontime_text_4"
+                            android:layout_below="@+id/weizhang_4"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="1dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="人气快递"
+                            android:layout_toRightOf="@+id/renji_4"
+                            android:layout_below="@+id/weizhang_4"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="2dp"
+                            />
+                        <Button
+                            android:id="@+id/call_4"
+                            android:layout_width="90dp"
+                            android:layout_height="28dp"
+                            android:text="联系员工"
+                            android:layout_below="@+id/xinji_4"
+                            android:background="@drawable/linearangele"
+                            android:textColor="@color/blue_btn_color_normal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="28dp"
+                            android:text="添加好友"
+                            android:layout_below="@+id/xinji_4"
+                            android:layout_toRightOf="@+id/call_4"
+                            android:background="@drawable/linearangele"
+                            android:textColor="@color/blue_btn_color_normal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="150dp"
+                            />
+                    </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
 

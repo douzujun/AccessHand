@@ -98,7 +98,7 @@
                         android:id="@+id/text_tag1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="可以提现"
+                        android:text="账单明细"
                         android:layout_toRightOf="@+id/money_text"
                         android:layout_below="@+id/yu_e_1"
                         android:layout_marginTop="20dp"
@@ -183,12 +183,12 @@
 
                     <TextView
                         android:id="@+id/hongbao_1"
-                        android:text="¥5.00"
+                        android:text="1个可用"
                         android:textColor="@color/red_btn_color_pressed"
                         android:layout_below="@+id/fenge_2"
                         android:layout_marginTop="15dp"
-                        android:layout_marginLeft="265dp"
-                        android:textSize="16dp"
+                        android:layout_marginLeft="259dp"
+                        android:textSize="13dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 

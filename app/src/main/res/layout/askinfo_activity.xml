@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- TODO: Update blank fragment layout -->
+            <!-- Toolbar -->
+            <LinearLayout
+                android:id="@+id/daily_pic"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="16dp"
+                android:paddingLeft="18dp"
+                android:background="@color/blue_btn_color_normal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/btn_wei_left1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/ic_me_left"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="问答详情"
+                        android:paddingRight="50dp"
+                        android:layout_marginLeft="14dp"
+                        android:gravity="left"
+                        android:textSize="21dp"
+                        android:textColor="#f7efef"
+                        android:background="@color/blue_btn_color_normal"/>
+
+                    <TextView
+                        android:id="@+id/text_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 返回主页"
+                        android:textSize="20dp"
+                        android:textColor="#f7efef"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="70dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--头像-->
+                <LinearLayout
+                    android:id="@+id/icon_head_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/child1" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="178****4367"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="22dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--问-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wen_1"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginLeft="12dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有什么"
+                            android:textSize="17dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="7dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="零食"
+                            android:textSize="17dp"
+                            android:layout_marginTop="15dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="好吃 ?"
+                            android:textSize="17dp"
+                            android:layout_marginTop="15dp"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:hint="提问于5天前"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yaoqing_1"
+                        android:layout_marginLeft="42dp"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="邀请达人回答"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.01"
+                        android:background="@color/whitesmoke"
+                        />
+
+                    <ImageView
+                        android:id="@+id/guanzhu_2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/pj_x"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="35dp"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/guanzhu_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/guanzhu_11"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="35dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.45"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="关注此问题"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/whitesmoke"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/da_1"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="全部回答(2)"
+                            android:textSize="14dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="7dp"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/whitesmoke"/>
+
+                    <!--头像-->
+                    <LinearLayout
+                        android:id="@+id/icon_head_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ay4" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="豆子1024"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="16dp"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="五天前"
+                                android:textSize="10dp"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="周黑鸭的鸡胗还是不错的，甜中带辣，肉质紧密，越嚼越香。好吃。"
+                                android:layout_marginTop="12dp"
+                                />
+                            <ImageView
+                                android:layout_width="300dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/pinglun_2"
+                                />
+
+                            <LinearLayout
+                                android:layout_marginTop="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="90dp"
+                                    android:background="@drawable/linearangele"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/zan_1"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:src="@drawable/zan_3"
+                                        android:layout_marginLeft="3dp"
+                                        />
+                                    <ImageView
+                                        android:id="@+id/zan_2"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:src="@drawable/zan_2"
+                                        android:layout_marginLeft="3dp"
+                                        android:visibility="gone"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:text="有用"
+                                        android:textSize="13dp"
+                                        android:layout_gravity="top"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginRight="3dp"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/pinglun_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:background="@drawable/linearangele"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/pinglun_1"
+                                        android:layout_marginLeft="5dp"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="评论"
+                                        android:textSize="13dp"
+                                        android:layout_marginTop="0.5dp"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginRight="3dp"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/add_f"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:background="@drawable/linearangele"
+                                    >
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/addf_1"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="好友"
+                                        android:textSize="13dp"
+                                        android:layout_marginTop="0.5dp"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_marginRight="3dp"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/whitesmoke"/>
+
+                    <!--评论2-->
+                    <!--头像-->
+                    <LinearLayout
+                        android:id="@+id/icon_head_image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ay5" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="黑色的白羊"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="16dp"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="五天前"
+                                android:textSize="10dp"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="这个好吃~~"
+                                android:layout_marginTop="12dp"
+                                />
+                            <ImageView
+                                android:layout_width="300dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/pinglun_3"
+                                />
+
+                            <LinearLayout
+                                android:layout_marginTop="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="90dp"
+                                    android:background="@drawable/linearangele"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/zan_11"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:src="@drawable/zan_3"
+                                        android:layout_marginLeft="3dp"
+                                        />
+                                    <ImageView
+                                        android:id="@+id/zan_12"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:src="@drawable/zan_2"
+                                        android:layout_marginLeft="3dp"
+                                        android:visibility="gone"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:text="有用"
+                                        android:textSize="13dp"
+                                        android:layout_gravity="top"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginRight="3dp"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/pinglun_11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:background="@drawable/linearangele"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/pinglun_1"
+                                        android:layout_marginLeft="5dp"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="评论"
+                                        android:textSize="13dp"
+                                        android:layout_marginTop="0.5dp"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginRight="3dp"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/add_f1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:background="@drawable/linearangele"
+                                    >
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/addf_1"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="好友"
+                                        android:textSize="13dp"
+                                        android:layout_marginTop="0.5dp"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_marginRight="3dp"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/whitesmoke"/>
+
+                    <LinearLayout
+                        android:id="@+id/icon_head_image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ay1" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="北玄道人"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="16dp"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="五天前"
+                                android:textSize="10dp"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="大夏天的觉得没什么好吃的，西瓜棒冰还不错的选择"
+                                android:layout_marginTop="12dp"
+                                />
+
+                            <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="90dp"
+                                    android:background="@drawable/linearangele"
+                                    >
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/zan_1"
+                                        android:layout_marginLeft="3dp"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="赞  "
+                                        android:textSize="13dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="6dp"
+                                        android:layout_marginRight="3dp"
+                                        />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:background="@drawable/linearangele"
+                                    >
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/pinglun_1"
+                                        android:layout_marginLeft="5dp"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="评论"
+                                        android:textSize="12dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="6dp"
+                                        android:layout_marginRight="3dp"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:background="@drawable/linearangele"
+                                    >
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/addf_1"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="好友"
+                                        android:textSize="12dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginRight="3dp"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/whitesmoke"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

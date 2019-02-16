@@ -102,7 +102,7 @@
                 android:layout_below="@id/im_life"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="3dp"
-                android:text="生活"
+                android:text="社交"
                 android:textColor="#9A9A9A"
                 android:textSize="12sp" />
         </RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/daily_pic1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:background="@color/blue_btn_color_normal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btn_yi_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/close_2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="我的好友"
+                    android:paddingRight="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20sp"
+                    android:textColor="#f7efef"
+                    android:background="@color/blue_btn_color_normal"/>
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.douzi.accesshand.Contact.sortlist.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:background="@drawable/acm_inputbox"
+            android:drawableLeft="@drawable/search"
+            android:hint="@string/search"
+            android:singleLine="true"
+            android:textSize="15.0dip" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@+id/sortlist"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                   android:background="@color/whites"
+                  android:listSelector="@drawable/comm_btn_selector"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/number_base"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30.0dip"
+                android:visibility="invisible" />
+
+            <com.douzi.accesshand.Contact.sortlist.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+    </LinearLayout>
+
+    
+</RelativeLayout>

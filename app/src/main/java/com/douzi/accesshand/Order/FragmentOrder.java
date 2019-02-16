@@ -45,7 +45,9 @@ public class FragmentOrder extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_order,null);
+
         permission();
+
         context = (Button)view.findViewById(R.id.context_1);
         again = (Button)view.findViewById(R.id.again_1);
         confirm = (Button)view.findViewById(R.id.confirm_1);
@@ -102,7 +104,7 @@ public class FragmentOrder extends Fragment implements View.OnClickListener{
                 {
                     confirm.setText("完成订单");
                     Order_state1.setText("待完成");
-                }else if(confirm.getText().equals("完成订单")){
+                }else if(confirm.getText().equals("确认收货")){
 
                     intent = new Intent(getContext(), order_confirm.class);
                     startActivity(intent);

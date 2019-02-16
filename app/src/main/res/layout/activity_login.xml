@@ -163,7 +163,7 @@
             android:layout_marginTop="4dp"
             android:textSize="16sp"
             android:textColor="@color/colorAccent"
-            android:text="关于账号方面的帮助?  忘记密码，验证码登陆？"/>
+            android:text="短信密码登录?                  忘记密码？"/>
 
         <!-- 下一步 操作按钮 -->
         <Button

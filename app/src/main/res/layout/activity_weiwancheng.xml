@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#b9b8b8" >
+    android:background="@color/whites" >
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -12,7 +12,7 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" >
 
 
             <!-- TODO: Update blank fragment layout -->
@@ -21,7 +21,7 @@
                 android:id="@+id/daily_pic"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:paddingTop="20dp"
+                android:paddingTop="16dp"
                 android:paddingLeft="20dp"
                 android:background="@color/blue_btn_color_normal">
 
@@ -34,16 +34,19 @@
                         android:id="@+id/btn_wei_left1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/ic_me_left"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="未完成订单"
-                        android:paddingRight="50dp"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:textSize="24sp"
+                        android:paddingRight="40dp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="22sp"
                         android:textColor="#f7efef"
+                        android:layout_marginTop="1dp"
                         android:background="@color/blue_btn_color_normal"/>
 
                 </LinearLayout>
@@ -73,7 +76,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/ay1"
+                            android:src="@drawable/ay4"
                             android:layout_centerInParent="true"
                             android:id="@+id/circleImageView" />
                     </LinearLayout>
@@ -162,7 +165,7 @@
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:background="@drawable/linearangele"
-                            android:text="取消订单"
+                            android:text="联系员工"
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>
@@ -172,7 +175,7 @@
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:background="@drawable/linearangele"
-                            android:text="确认接单"
+                            android:text="确认收货"
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>
@@ -183,7 +186,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="8dp"
-                    android:background="#4fa19999"/>
+                    android:background="@color/whitesmoke"/>
 
                 <!--第二个订单-->
                 <RelativeLayout
@@ -200,7 +203,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/child"
+                            android:src="@drawable/ay5"
                             android:layout_centerInParent="true"
                             android:id="@+id/circleImageView2" />
                     </LinearLayout>
@@ -278,20 +281,22 @@
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>
+
                         <Button
                             android:id="@+id/quciao2"
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:background="@drawable/linearangele"
-                            android:text="取消订单"
+                            android:text="联系员工"
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>
+
                         <Button
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:background="@drawable/linearangele"
-                            android:text="确认接单"
+                            android:text="确认收货"
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>

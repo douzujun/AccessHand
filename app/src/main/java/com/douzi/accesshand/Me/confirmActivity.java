@@ -1,6 +1,8 @@
 package com.douzi.accesshand.Me;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -84,7 +86,16 @@ public class confirmActivity extends Activity {
         addBtn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(confirmActivity.this, "添加好友", Toast.LENGTH_SHORT).show();
+                AlertDialog.Builder builder = new AlertDialog.Builder(confirmActivity.this);
+                builder.setTitle("通知");
+                builder.setMessage("已向对方发送添加好友通知 !");
+                builder.setCancelable(false);
+                builder.setPositiveButton("确定",new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+                builder.show();
             }
         });
 

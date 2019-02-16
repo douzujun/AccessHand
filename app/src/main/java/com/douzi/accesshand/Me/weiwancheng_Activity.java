@@ -20,7 +20,6 @@ public class weiwancheng_Activity extends AppCompatActivity {
 
     private Button confirmBtn;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +41,7 @@ public class weiwancheng_Activity extends AppCompatActivity {
         confirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(weiwancheng_Activity.this, confirmActivity.class);
+                Intent intent = new Intent(weiwancheng_Activity.this, com.douzi.accesshand.Order.order_confirm.class);
                 startActivity(intent);
             }
         });

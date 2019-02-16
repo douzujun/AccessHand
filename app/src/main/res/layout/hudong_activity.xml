@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitesmoke"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- TODO: Update blank fragment layout -->
+            <!-- Toolbar -->
+            <LinearLayout
+                android:id="@+id/daily_pic"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="16dp"
+                android:paddingLeft="18dp"
+                android:background="@color/blue_btn_color_normal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/btn_wei_left1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/ic_me_left"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通知"
+                        android:paddingRight="50dp"
+                        android:layout_marginLeft="14dp"
+                        android:gravity="left"
+                        android:textSize="21dp"
+                        android:textColor="#f7efef"
+                        android:background="@color/blue_btn_color_normal"/>
+
+                    <TextView
+                        android:id="@+id/text_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 返回主页"
+                        android:textSize="20dp"
+                        android:textColor="#f7efef"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="95dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:text="今天  14:23"
+                    android:textAlignment="center"
+                    android:background="#4fa19999"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white_color_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--头像-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ay6_1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="z****n"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="回答了你的问题:"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="15dp"
+                            />
+                    </LinearLayout>
+                    <!--问-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wen_1"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginLeft="8dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有什么"
+                            android:textSize="14dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="7dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="零食"
+                            android:textSize="14dp"
+                            android:layout_marginTop="15dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="好吃 ?夏天想吃的，健康还好吃..."
+                            android:textSize="14dp"
+                            android:layout_marginTop="15dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/whitesmoke"
+                        >
+
+                        <TextView
+                            android:id="@+id/tongzhi_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看详情"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@color/white_color_disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--test2-->
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:text="今天  12:30"
+                    android:textAlignment="center"
+                    android:background="#4fa19999"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white_color_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--头像-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ay2"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="玄***梦"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="回答了你的问题:"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="15dp"
+                            />
+                    </LinearLayout>
+                    <!--问-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wen_1"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginLeft="8dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有什么书推荐,"
+                            android:textSize="14dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="7dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="编程看什么书好，实战和概念..."
+                            android:textSize="14dp"
+                            android:layout_marginTop="15dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/whitesmoke"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看详情"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@color/white_color_disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--test4-->
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:text="今天  10:30"
+                    android:textAlignment="center"
+                    android:background="#4fa19999"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white_color_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--头像-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ay12"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="木**晴"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="回答了你的问题:"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="15dp"
+                            />
+                    </LinearLayout>
+                    <!--问-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wen_1"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginLeft="8dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有什么"
+                            android:textSize="14dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="7dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="零食适合夏天吃，不上火，健康，又..."
+                            android:textSize="14dp"
+                            android:layout_marginTop="15dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/whitesmoke"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看详情"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@color/white_color_disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--test3-->
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:text="昨天  17:30"
+                    android:textAlignment="center"
+                    android:background="#4fa19999"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white_color_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--头像-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ay3"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="爱**塔"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="回答了你的问题:"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="15dp"
+                            />
+                    </LinearLayout>
+                    <!--问-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wen_1"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginLeft="8dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未来程序员"
+                            android:textSize="14dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="7dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="学习编程看什么书好，实战和概念..."
+                            android:textSize="14dp"
+                            android:layout_marginTop="15dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/whitesmoke"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看详情"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@color/white_color_disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp">
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/whitesmoke"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

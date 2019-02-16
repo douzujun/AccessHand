@@ -126,7 +126,7 @@
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:background="@drawable/linearangele"
-                            android:text="去评价"
+                            android:text="轨迹追踪"
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>
@@ -135,7 +135,7 @@
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:background="@drawable/linearangele"
-                            android:text="取消订单"
+                            android:text="联系员工"
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>
@@ -144,18 +144,17 @@
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:background="@drawable/linearangele"
-                            android:text="确认接单"
+                            android:text="确认收货"
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>
                     </LinearLayout>
                 </RelativeLayout>
 
-                <!--分割符-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="8dp"
-                    android:background="#4fa19999"/>
+                    android:background="@color/whitesmoke"/>
 
                 <!--第二个订单-->
                 <RelativeLayout
@@ -239,7 +238,7 @@
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:background="@drawable/linearangele"
-                            android:text="去评价"
+                            android:text="轨迹追踪"
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>
@@ -248,7 +247,7 @@
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:background="@drawable/linearangele"
-                            android:text="取消订单"
+                            android:text="联系员工"
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>
@@ -256,7 +255,7 @@
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:background="@drawable/linearangele"
-                            android:text="确认接单"
+                            android:text="确认收货"
                             android:textSize="13sp"
                             android:textColor="#9e9999"
                             android:layout_weight="0.25"/>
@@ -272,6 +271,259 @@
                         android:layout_toRightOf="@+id/imageView3"
                         android:layout_toEndOf="@+id/imageView3" />
                 </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/whitesmoke"/>
+
+                <!--第三个订单-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearangele"
+                    android:padding="10dp">
+                    <!--头像-->
+                    <LinearLayout
+                        android:id="@+id/icon_head_image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/ay1"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/circleImageView4" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/ic_order_select"
+                        android:layout_toRightOf="@id/icon_head_image4"
+                        android:id="@+id/imageView4" />
+                    <TextView
+                        android:id="@+id/item_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/icon_head_image4"
+                        android:text="        鲜花一束"/>
+                    <View
+                        android:id="@+id/view_temp_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_below="@id/item_4"
+                        android:layout_toRightOf="@id/icon_head_image4"
+                        android:background="#d6d6d6"
+                        />
+                    <ImageView
+                        android:id="@+id/time_4"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/ic_order_time1"
+                        android:layout_toRightOf="@id/icon_head_image4"
+                        android:layout_below="@id/view_temp_4"/>
+
+                    <ImageView
+                        android:id="@+id/location_4"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/ic_order_region"
+                        android:layout_toRightOf="@id/icon_head_image4"
+                        android:layout_below="@id/time_4"/>
+
+
+                    <TextView
+                        android:id="@+id/time_text_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 2017.2.21 16:12-2017.2.21 17:00"
+                        android:layout_below="@+id/imageView4"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:layout_toEndOf="@+id/imageView4" />
+
+                    <TextView
+                        android:id="@+id/location_text_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   苹果公寓23#528室"
+                        android:layout_toRightOf="@id/time_4"
+                        android:layout_below="@id/time_text_4"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/icon_head_image4"
+                        android:layout_below="@id/location_text_4"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/quxiao2_text4"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0.25"
+                            android:text="已完成"
+                            android:textColor="#a45151"/>
+
+                        <Button
+                            android:id="@+id/pingjia_btn4"
+                            android:layout_width="8dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/linearangele"
+                            android:text="去评价"
+                            android:textSize="13sp"
+                            android:textColor="#9e9999"
+                            android:layout_weight="0.25"/>
+                        <Button
+                            android:id="@+id/quciao4"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/linearangele"
+                            android:text="联系员工"
+                            android:textSize="13sp"
+                            android:textColor="#9e9999"
+                            android:layout_weight="0.25"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/linearangele"
+                            android:text="订单详情"
+                            android:textSize="13sp"
+                            android:textColor="#9e9999"
+                            android:layout_weight="0.25"
+                            android:id="@+id/button4" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/whitesmoke"/>
+
+                <!--第三个订单-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearangele"
+                    android:padding="10dp">
+                    <!--头像-->
+                    <LinearLayout
+                        android:id="@+id/icon_head_image5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/ay4"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/circleImageView5" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/ic_order_select"
+                        android:layout_toRightOf="@id/icon_head_image5"
+                        android:id="@+id/imageView5" />
+                    <TextView
+                        android:id="@+id/item_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/icon_head_image5"
+                        android:text="        星巴克咖啡两杯"/>
+                    <View
+                        android:id="@+id/view_temp_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_below="@id/item_5"
+                        android:layout_toRightOf="@id/icon_head_image5"
+                        android:background="#d6d6d6"
+                        />
+                    <ImageView
+                        android:id="@+id/time_5"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/ic_order_time1"
+                        android:layout_toRightOf="@id/icon_head_image5"
+                        android:layout_below="@id/view_temp_5"/>
+
+                    <ImageView
+                        android:id="@+id/location_5"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/ic_order_region"
+                        android:layout_toRightOf="@id/icon_head_image5"
+                        android:layout_below="@id/time_5"/>
+
+                    <TextView
+                        android:id="@+id/time_text_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 2017.2.20 16:12-2017.2.20 17:20"
+                        android:layout_below="@+id/imageView5"
+                        android:layout_toRightOf="@+id/imageView5"
+                        android:layout_toEndOf="@+id/imageView5" />
+
+                    <TextView
+                        android:id="@+id/location_text_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   方肇周计算机楼417室"
+                        android:layout_toRightOf="@id/time_5"
+                        android:layout_below="@id/time_text_5"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/icon_head_image5"
+                        android:layout_below="@id/location_text_5"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/quxiao2_text5"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0.25"
+                            android:text="已完成"
+                            android:textColor="#a45151"/>
+
+                        <Button
+                            android:id="@+id/pingjia_btn5"
+                            android:layout_width="8dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/linearangele"
+                            android:text="去评价"
+                            android:textSize="13sp"
+                            android:textColor="#9e9999"
+                            android:layout_weight="0.25"/>
+
+                        <Button
+                            android:id="@+id/quciao5"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/linearangele"
+                            android:text="联系员工"
+                            android:textSize="13sp"
+                            android:textColor="#9e9999"
+                            android:layout_weight="0.25"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/linearangele"
+                            android:text="订单详情"
+                            android:textSize="13sp"
+                            android:textColor="#9e9999"
+                            android:layout_weight="0.25"
+                            android:id="@+id/button5" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
             </LinearLayout>
         </LinearLayout>
 

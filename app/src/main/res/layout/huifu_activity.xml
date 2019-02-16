@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/daily_pic"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="18dp"
+        android:background="@color/blue_btn_color_normal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/btn_wei_left1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/ic_me_left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详情"
+                android:paddingRight="50dp"
+                android:layout_marginLeft="14dp"
+                android:gravity="left"
+                android:textSize="21dp"
+                android:textColor="#f7efef"
+                android:background="@color/blue_btn_color_normal"/>
+
+            <TextView
+                android:id="@+id/text_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 返回主页"
+                android:textSize="20dp"
+                android:textColor="#f7efef"
+                android:layout_gravity="right"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="100dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--头像-->
+                        <LinearLayout
+                            android:id="@+id/icon_head_image2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/circleImageView2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/ay4" />
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="豆子1024"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginTop="16dp"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="五天前   回答于"
+                                        android:textSize="13dp"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="零食什么比较好吃?"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/green_btn_color_normal"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginLeft="8dp"
+                                        />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="周黑鸭的鸡胗还是不错的，甜中带辣，肉质紧密，越嚼越香。好吃。"
+                                    android:layout_marginTop="8dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="300dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/pinglun_2"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_marginTop="2dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="21dp"
+                                        android:layout_marginLeft="230dp"
+                                        android:background="@drawable/linearangele"
+                                        >
+
+                                        <ImageView
+                                            android:id="@+id/zan_1"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:src="@drawable/zan_3"
+                                            android:layout_marginLeft="3dp"
+                                            />
+                                        <ImageView
+                                            android:id="@+id/zan_2"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:src="@drawable/zan_2"
+                                            android:layout_marginLeft="3dp"
+                                            android:visibility="gone"
+                                            />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:text="有用"
+                                            android:textSize="13dp"
+                                            android:layout_gravity="top"
+                                            android:layout_marginLeft="7dp"
+                                            android:layout_marginRight="3dp"
+                                            />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/whitesmoke"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部评论"
+                        android:textSize="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/icon_head_image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ay1" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="北玄道人"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="16dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="刚刚"
+                            android:textSize="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="不错"
+                            android:layout_marginTop="12dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_marginTop="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="21dp"
+                                android:layout_marginLeft="230dp"
+                                android:background="@drawable/linearangele"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/zan_11"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:src="@drawable/zan_3"
+                                    android:layout_marginLeft="3dp"
+                                    />
+                                <ImageView
+                                    android:id="@+id/zan_12"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:src="@drawable/zan_2"
+                                    android:layout_marginLeft="3dp"
+                                    android:visibility="gone"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="有用"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="top"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_marginRight="3dp"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/whitesmoke"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/whitesmoke"
+            >
+
+            <EditText
+                android:id="@+id/text_info"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="6"
+                android:hint=" 回复楼主"
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/whites"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/smile_1"
+                />
+            <Button
+                android:id="@+id/send_1"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1.4"
+                android:text="发送"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/whitesmoke"
+                android:background="@drawable/linearangele8"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

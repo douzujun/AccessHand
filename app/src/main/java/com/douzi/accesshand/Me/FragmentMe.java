@@ -88,10 +88,15 @@ public class FragmentMe extends Fragment implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.ic_my_adress:
-                Toast.makeText(getContext(),"常见问题",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"地址管理",Toast.LENGTH_SHORT).show();
+                intent = new Intent(getContext(), dizhi_Activity.class);
+                startActivity(intent);
                 break;
             case R.id.ic_my_youhui:
-                Toast.makeText(getContext(),"我的群组",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"我的群组",Toast.LENGTH_SHORT).show();
+//                intent = new Intent(getContext(), com.douzi.accesshand.Contact.sortlist.MainActivity.class);
+                intent = new Intent(getContext(), taolunzuActivity.class);
+                startActivity(intent);
                 break;
             case R.id.ic_my_jifen:
                 intent = new Intent(getContext(), jifen_Activity.class);
