@@ -2,7 +2,8 @@
 随手快递
 
 - ![1.png](https://github.com/douzujun/AccessHand/blob/master/demo/1.png?raw=true)
-          ![2.png](https://github.com/douzujun/AccessHand/blob/master/demo/2.png?raw=true)
+
+- ![2.png](https://github.com/douzujun/AccessHand/blob/master/demo/2.png?raw=true)
 
 - ![3.png](https://github.com/douzujun/AccessHand/blob/master/demo/3.png?raw=true)
 
