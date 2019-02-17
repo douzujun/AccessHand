@@ -4,8 +4,6 @@
 
 - ![2.png](https://github.com/douzujun/AccessHand/blob/master/demo/2.png?raw=true)
 
-- ![3.png](https://github.com/douzujun/AccessHand/blob/master/demo/3.png?raw=true)
-
 - ![4.png](https://github.com/douzujun/AccessHand/blob/master/demo/4.png?raw=true)
 
 - ![5.png](https://github.com/douzujun/AccessHand/blob/master/demo/5.png?raw=true)
